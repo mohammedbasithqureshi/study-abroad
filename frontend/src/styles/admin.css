@@ -1,0 +1,108 @@
+.admin-page {
+  min-height: 100vh;
+  background: #0b1120;
+  color: #e5e7eb;
+  padding: 40px;
+}
+
+.admin-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* FORM */
+.admin-form {
+  background: #020617;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #1e293b;
+}
+
+.input-group,
+.textarea-group {
+  margin-bottom: 18px;
+}
+
+.input-group label,
+.textarea-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.input-group input,
+.textarea-group textarea {
+  width: 100%;
+  padding: 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: white;
+  border-radius: 8px;
+}
+
+.textarea-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.admin-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* PREVIEW */
+.preview-box {
+  background: #020617;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #1e293b;
+}
+
+.preview-card {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.preview-card h2 {
+  margin-bottom: 6px;
+}
+
+.funded-tag {
+  display: inline-block;
+  background: #22c55e;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.desc {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.muted {
+  color: #64748b;
+  text-align: center;
+  margin-top: 40px;
+}

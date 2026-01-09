@@ -1,4 +1,6 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -7,11 +9,12 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Scholarship from "./pages/Scholarship";
 import ScholarshipDetails from "./pages/ScholarshipDetails";
+import Admin from "./pages/Admin"; // ✅ Admin page
 
 function App() {
   return (
     <BrowserRouter>
-      {/* APP LAYOUT */}
+      {/* App layout */}
       <div className="app-layout">
         <Navbar />
 
@@ -22,6 +25,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/scholarship" element={<Scholarship />} />
             <Route path="/scholarship/:id" element={<ScholarshipDetails />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
 

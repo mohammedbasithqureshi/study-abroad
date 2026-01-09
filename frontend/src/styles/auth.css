@@ -59,17 +59,6 @@
   border: 1px solid #6366f1;
 }
 
-/* ===== PASSWORD RULES ===== */
-.password-rules {
-  font-size: 12px;
-  color: #9aa4b2;
-  margin-top: 6px;
-}
-
-.password-rules span {
-  display: block;
-}
-
 /* ===== BUTTON ===== */
 .auth-btn {
   width: 100%;
@@ -90,12 +79,14 @@
 /* ===== SOCIAL LOGIN ===== */
 .social-login {
   margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .social-login button {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -104,7 +95,6 @@
 
 .google { background: #fff; color: #000; }
 .github { background: #24292f; color: #fff; }
-.microsoft { background: #2f2f2f; color: #fff; }
 
 /* ===== FOOTER LINK ===== */
 .auth-footer {
@@ -116,4 +106,28 @@
 .auth-footer a {
   color: #60a5fa;
   text-decoration: none;
+}
+
+/* ===== TOAST NOTIFICATIONS ===== */
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 9999;
+  opacity: 0.95;
+  animation: slideDown 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.toast.success { background-color: #22c55e; } /* green */
+.toast.error { background-color: #ef4444; }   /* red */
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  to { opacity: 0.95; transform: translateX(-50%) translateY(0); }
 }
