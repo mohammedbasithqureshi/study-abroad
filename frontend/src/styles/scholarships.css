@@ -1,0 +1,62 @@
+.scholarship-page {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: #0f172a;
+  color: white;
+}
+
+/* TITLE */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #f8fafc;
+}
+
+/* SEARCH + FILTER */
+.search-filter-bar {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 14px;
+}
+
+.search-filter-bar input,
+.search-filter-bar select {
+  flex: 1;
+  padding: 12px 14px;
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.search-filter-bar input::placeholder {
+  color: #94a3b8;
+}
+
+.search-filter-bar input:focus,
+.search-filter-bar select:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* GRID */
+.scholarship-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.no-results {
+  text-align: center;
+  color: #94a3b8;
+  grid-column: 1 / -1;
+}

@@ -1,0 +1,119 @@
+/* ===== AUTH GLOBAL ===== */
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===== CARD ===== */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #0b1320;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+/* ===== TITLE ===== */
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.auth-card p {
+  text-align: center;
+  font-size: 14px;
+  color: #9aa4b2;
+  margin-bottom: 20px;
+}
+
+/* ===== INPUTS ===== */
+.auth-group {
+  margin-bottom: 14px;
+}
+
+.auth-group label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #cbd5e1;
+}
+
+.auth-group input {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #111827;
+  color: #fff;
+  font-size: 14px;
+}
+
+.auth-group input:focus {
+  border: 1px solid #6366f1;
+}
+
+/* ===== PASSWORD RULES ===== */
+.password-rules {
+  font-size: 12px;
+  color: #9aa4b2;
+  margin-top: 6px;
+}
+
+.password-rules span {
+  display: block;
+}
+
+/* ===== BUTTON ===== */
+.auth-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #6366f1, #3b82f6);
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== SOCIAL LOGIN ===== */
+.social-login {
+  margin-top: 18px;
+}
+
+.social-login button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.google { background: #fff; color: #000; }
+.github { background: #24292f; color: #fff; }
+.microsoft { background: #2f2f2f; color: #fff; }
+
+/* ===== FOOTER LINK ===== */
+.auth-footer {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.auth-footer a {
+  color: #60a5fa;
+  text-decoration: none;
+}

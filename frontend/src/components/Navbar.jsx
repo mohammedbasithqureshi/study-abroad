@@ -1,0 +1,18 @@
+import { Link } from "react-router-dom";
+import "../styles/navbar.css";
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="logo">StudyBuddy</div>
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/scholarship">Scholarships</Link>
+        <Link to="/login">Login</Link>
+        <Link to="/signup">Signup</Link>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
